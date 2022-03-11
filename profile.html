@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Profile Information</title>
+        <h1><center>MY PROFILE</center></h1>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body,h2,h3,h4,p {font-family: Calibri, sans-serif}
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:hsl(120, 96%, 31%);
+            text-shadow: 1px 2px blue;
+            position: relative;
+            animation-name: movingText;
+            animation-duration:4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes movingText {
+            0% {color:hsl(120, 96%, 31%);left:0px}
+            25% {color:hsla(165, 98%, 58%, 0.918); left:-300px;}
+            50% {color:hsla(207, 96%, 54%, 0.918);}
+            75% {color:hsla(224, 96%, 54%, 0.918); left:300px;}
+            100%{color:hsl(229, 100%, 50%);left:0px} 
+        }
+
+        .container{
+            display: grid;
+            grid-template-areas:  
+            'left left middle middle right right';
+            grid-column-gap: 10px;           
+        }
+        .left,
+        .middle,
+        .right {
+            position:relative; top: 100px;   
+            padding: 10px;
+        }
+
+        .left{
+            grid-area: left;
+            
+        }
+        .middle{
+            grid-area: middle;
+            left: 90px;
+            
+        }
+        .right{
+            grid-area: right;
+            
+            
+        }
+
+        .id:after {
+            content: "";
+            display: table;
+            clear: both;}
+        
+        body {
+          background-image: url('blurbg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+
+        ul {
+            position: fixed;
+            top: 100px;
+            width: 100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: hsl(310, 100%, 90%);
+            z-index: 1;
+        }
+        
+        li {
+            float: left;
+            border-right: 1px solid hsl(311, 100%, 29%);
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+         li a:hover {
+             background-color: hsl(311, 100%, 69%);
+         }
+         .active {
+             background-color: hsl(212, 100%, 69%);
+         }
+        
+        </style>
+    </head>
+
+    
+
+    <body>
+        <ul>
+            <b>
+            <li><a class="active" href="#About Me">About Me</a></li>
+            <li><a href="#Favorite Foods">Favorite Foods</a></li>
+            <li><a href="#Sports">Sports</a></li>
+            </b>
+        </ul>
+
+        <!--Main page-->
+        <div class="container" id="About Me">
+            <div class="left">     
+                <div style="position:relative; left: 150px; top:10px;">
+                    <IMG border="2" img src="prof image.jpg" alt="My photo" style="width: 400px;height: 370px;">
+                        
+                        <h2>Mark Rywell G. Gaje</h2>
+                        <h3>University of Science and Technology of Southern Philippines</h3>
+                        <h3>Student ID: 2020302619</h3>
+                        <h3>Year and Course: 2nd Year - BS - Information Technology</h3>
+                        <h4>Civil Status: Single</h4>
+                        <h4>Birthdate: May 31, 2001</h4>
+                        <h4>Address: Corrales Extension, Cagayan de Oro City</h4><br>
+                            
+                </div>
+            </div>
+            
+            <div class="middle">
+                <div style="position:relative; top:10px;">
+                    <IMG border="2" img src= "social_media.png" alt="Social Media" style="width: 400px;height: 370px;">
+                    
+                    <h2>Social Media Accounts</h2>
+                    <h4>Facebook Profile: <a href="https://www.facebook.com/IamNagato43/">Mark Rywell Gemina Gaje</a></h4>
+                    <h4>Twitter Profile: <a href="https://twitter.com/MarkRyyywell">marK</a></h4>
+                    <h4>Email Address: gopro855@gmail.com</h4>
+                    <h2>Hobbies and Skills</h2>
+                    <p>My Hobbies: Playing computer games, Cooking, Swimming,<br> Watching Computer related videos, movies, and anime</p>
+                    <p>My Skills: Athletic, Creative, Decisive, Self-Organized, Critical Thinking Skills</p><br>
+                </div>
+            </div>
+
+            <div class="right">
+                <div style="position:relative; top:10px;"></div>
+                    
+                    <IMG border="2" img src= "schools.png" alt="Educations" style="position: relative;top:10px; width: 400px;height: 370px;">
+
+                    <h2>Schools Attended</h2>
+                    <h3>Sacred Heart of Jesus Montessori School</h3>
+                    <h3>Xavier University - Ateneo de Cagayan</h3>
+                    <h3>University of Science and Technology of Southern Philippines</h3>
+            </div>
+
+        </div>
+
+        
+
+        
+        
+        
+        
+        
+
+
+
+
+        
+        
+
+    </body>
+    
+
+</html>
